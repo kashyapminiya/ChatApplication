@@ -39,6 +39,9 @@ return [
         'web' => [
             'driver' => 'session',
             'provider' => 'users',
+            'remember' => [
+            'expire' => 14400,
+        ],
         ],
     ],
 
