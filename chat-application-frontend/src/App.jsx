@@ -1,5 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import LoginPage from './components/LoginPage'
+import RegisterPage from './components/RegisterPage'
 import ChatRoom from './components/ChatRoom'
 import ProfilePage from './components/ProfilePage'
 import SettingPage from './components/SettingPage'
@@ -10,6 +11,7 @@ function App() {
     <Router>
       <Routes>
         <Route path="/" element={<LoginPage />} />
+        <Route path="/signup" element={<RegisterPage />} />
         <Route path="/connect" element={<ChatRoom />} />
         <Route path="/profile" element={<ProfilePage />} />
         <Route path="/settings" element={<SettingPage />} />
